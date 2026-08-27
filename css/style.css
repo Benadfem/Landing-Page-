@@ -80,6 +80,21 @@ img{
     width: 70%;
     margin-bottom: 20px;
 }
+
+/* Video */
+.video{
+    padding: 10px 0 40px;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview{
+    margin-bottom: 20px;
+}
 /* Utlity  */
 .container{
     max-width: 1100px;
@@ -137,6 +152,8 @@ btn-block{
     line-height: 1.4;
     font-weight: normal;
     margin: 30px 0 20px;
+    text-align: center;
+    padding: 20px 0 10px;
 }
 .text-lg{
     font-size: 1.8rem;
@@ -159,4 +176,23 @@ btn-block{
 
 text-center{
     text-align: center;
+}
+
+/* Background */
+.bg-primary{
+    background: var(--primary-color);
+    column-rule: #fff;
+}
+.bg-light{
+    background: var(--light-color);
+    column-rule: #333;
+}
+.bg-dark{
+    background: var(--dark-color);
+    column-rule: #fff;
+}
+
+.bg-black{
+    background: #000;
+    color: #fff;
 }
