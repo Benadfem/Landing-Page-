@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+/* create a global variable for your constants  */
+:root{
+    --primary-color: #4891ff;
+    --light-color: #f4f4f4;
+    --dark-color: #111;
+}
 body{
     font-family: "poppins", sans-serif;
     font-size: 16px;
@@ -23,4 +29,79 @@ ul{
 
 img{
     max-width: 100%;
+}
+
+/* NavBar */
+.navbar {
+    background: #fff;
+    padding: 20px;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul{
+    display: flex;
+
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    margin-left: 10px;
+}
+/* Utlity  */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container-sm{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+.btn-dark{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+btn-block{
+    display: block;
+    width: 100%;
 }
